@@ -4,7 +4,7 @@ goal_duration = 5
 expected_rate_pa = 0.15
 goal_size = 1500000
 
-def showAmountToInvest(gaol_duration,expected_rate_pa,goal_size):
+def showAmountToInvest(goal_duration,expected_rate_pa,goal_size):
 	expected_rate_monthly = (1+expected_rate_pa)**(1/12)-1
 	yearly_required = goal_size/((1+expected_rate_pa)**goal_duration)
 	yearly_required_for_SIP = goal_size * expected_rate_pa / (1 + expected_rate_pa)/((1+ expected_rate_pa)**goal_duration - 1)
